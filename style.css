@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Joan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --btn-color: #906d23;
+    --banner-color: #f9fafb;
+    --focus-color: #6666ff;
+    --logo-banner-width: 35vw;
+}
+
+a {
+    text-decoration: none;
+    color: var(--btn-color);
+}
+
+a:visited {
+    color: var(--btn-color);
+}
+
+a:hover {
+    color: var(--focus-color)
+}
+
+.banner, .banner-colored {
+    width: max(600px, calc(100vw - var(--logo-banner-width)));
+    height: calc(100vh / 3);
+    padding-left: 5%;
+    padding-right: 15%;
+    overflow: hidden;
+}
+
+.banner-colored {
+    background: var(--banner-color);
+}
+
+body {
+    display: flex;
+}
+
+.content {
+    flex-direction: column;
+}
+
+.dialogue-container {
+    font-family: 'Joan', serif;
+    font-weight: bold;
+    font-size: 2rem;
+    padding-top: 5%;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.form-container {
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.25rem;
+}
+
+.footer-container {
+    padding-top: 5%;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.hidden {
+    display: none;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    border: 2px solid var(--btn-color);
+    border-radius: 5px;
+}
+
+input:focus {
+    border: none;
+    outline: 4px solid var(--focus-color);
+}
+
+label {
+    flex-direction: column;
+    padding-bottom: 5px;
+}
+
+.logo {
+    max-width: 200px;
+    height: auto;
+}
+
+.logo-banner {
+    background: url("./background.jpg");
+    background-position: center;
+    height: 100vh;
+    width: var(--logo-banner-width);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-footer {
+    position: absolute;
+    height: 2rem;
+    top: calc(100% - 2rem);
+}
+
+.submit {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    background: var(--btn-color);
+    border-radius: 8px;
+    color: white;
+    border: 2px solid var(--btn-color);
+    display: inline-block;
+    text-align: center;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.submit:hover, .submit:focus {
+    background: white;
+    border: 2px solid var(--btn-color);
+    color: black;
+}
