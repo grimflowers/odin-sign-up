@@ -9,7 +9,7 @@
 
 :root {
     --btn-color: #906d23;
-    --banner-color: #f9fafb;
+    --banner-color: #e0e6eb;
     --focus-color: #6666ff;
     --logo-banner-width: 35vw;
 }
@@ -29,7 +29,7 @@ a:hover {
 
 .banner, .banner-colored {
     width: max(600px, calc(100vw - var(--logo-banner-width)));
-    height: calc(100vh / 3);
+    height: max(300px, calc(100vh / 3));
     padding-left: 5%;
     padding-right: 15%;
     overflow: hidden;
@@ -118,7 +118,7 @@ label {
 .logo-banner {
     background: url("./background.jpg");
     background-position: center;
-    height: 100vh;
+    min-height: 100vh;
     width: var(--logo-banner-width);
     display: flex;
     justify-content: center;
