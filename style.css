@@ -95,6 +95,11 @@ input:focus {
     outline: 4px solid var(--focus-color);
 }
 
+.invalid {
+    border: none;
+    outline: 4px solid red;
+}
+
 label {
     flex-direction: column;
     padding-bottom: 5px;
@@ -139,4 +144,10 @@ label {
     background: white;
     border: 2px solid var(--btn-color);
     color: black;
+}
+
+.warning {
+    font-size: 1rem;
+    color: red;
+    letter-spacing: normal;
 }

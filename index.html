@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
     <title>Sign-Up</title>
 </head>
 <body>
@@ -17,7 +18,7 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. At possimus alias cupiditate quia deserunt reiciendis! <br> <br> You <em>know</em> you want to.
         </div>
         <div class="form-container banner">
-            <form action="#">
+            <form action="#" onsubmit="return validatePassword();">
                 <div class="input">
                     <label for="first-name">FIRST NAME</label>
                     <input type="text" id="first-name" name="first-name" required>
@@ -32,10 +33,10 @@
                 </div>
                 <div class="input">
                     <label for="phone-number">PHONE NUMBER</label>
-                    <input type="tel" id="phone-number" name="phone-number" pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$" oninvalid="this.setCustomValidity('Enter a valid phone number')">
+                    <input type="tel" id="phone-number" name="phone-number" oninvalid="this.setCustomValidity('Enter a valid phone number')">
                 </div>
                 <div class="input">
-                    <label for="pwd">PASSWORD</label>
+                    <label for="pwd">PASSWORD <span class="hidden warning">* passwords don't match</span></label>
                     <input type="password" id="pwd" name="pwd" required>
                 </div>
                 <div class="input">
