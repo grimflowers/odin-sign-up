@@ -90,6 +90,11 @@ input {
     border-radius: 5px;
 }
 
+input:user-invalid {
+    border: none;
+    outline: 4px solid red;
+}
+
 input:focus {
     border: none;
     outline: 4px solid var(--focus-color);
@@ -150,4 +155,5 @@ label {
     font-size: 1rem;
     color: red;
     letter-spacing: normal;
+    margin-top: 5px;
 }
