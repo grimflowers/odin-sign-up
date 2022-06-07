@@ -118,6 +118,7 @@ label {
 .logo-banner {
     background: url("./background.jpg");
     background-position: center;
+    background-repeat: no-repeat;
     min-height: 100vh;
     width: var(--logo-banner-width);
     display: flex;
